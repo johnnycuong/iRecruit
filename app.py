@@ -5,7 +5,8 @@ import enum
 import datetime
 from .user import db
 from .candidate import CandidateStatus
-
+from app import create_app
+app = create_app()
 class ApplicationStatus(enum.Enum):
     NEW = "new"
     SCREENING = "screening"
